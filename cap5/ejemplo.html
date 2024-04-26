@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ciudades = ["Hernandarias"]; //declara y define el contenido inicial del vector
+        //ciudades[0]="Hernandarias"
+
+        ciudades.push("Asuncion"); //agrega ciudad al final del vector
+        //ciudades[0]="Hernandarias"
+        //ciudades[1]="Asuncion"
+
+        ciudades.unshift("Aregua"); //agrega al inicio e mueve los demas
+        //ciudades[0]="Aregua"
+        //ciudades[1]="Hernandarias"
+        //ciudades[2]="Asuncion"
+
+        var retirada = ciudades.pop();//elimina la ultima ciudad del vector
+        //ciudades[0]="Aregua"
+        //ciudades[1]="Hernandarias"
+
+        retirada = ciudades.shift();//elimina la primera y sube los demas
+        //ciudades[0]="Hernandarias"
+
+    </script>
+</body>
+</html>
