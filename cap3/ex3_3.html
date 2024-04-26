@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 3.3</title>
+  </head>
+  <body>
+    <script>
+      var barrio = prompt("Barrio de Entrega: ");
+      var tasaEntrega;
+      switch (barrio) {
+        case "Centro":
+          tasaEntrega = 5.0;
+          break;
+        case "Fragata":
+        case "Tres Vendas":
+          tasaEntrega = 7.0;
+          break;
+        case "Laranjal":
+          tasaEntrega = 10.0;
+          break;
+        default:
+          tasaEntrega = 8.0;
+      }
+      alert("Tasa R$: " + tasaEntrega.toFixed(2));
+    </script>
+  </body>
+</html>
