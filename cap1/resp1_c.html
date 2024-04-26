@@ -1,0 +1,20 @@
+<meta charset="utf-8" />
+<script>
+  /* elaborar un programa para una tienda
+    el cual lea el precio de un producto y muestre
+    las opciones de pago en la tienda.
+    calcula y muestre el valor para el pago al contado con
+    10% de descuento y el valor en 3x
+*/
+
+  // leer el precio del producto
+  var precio = Number(prompt("Precio R$: "));
+
+  // calcular el valor al contado y en 3 cuotas
+  var descuento = precio * 0.10;
+  var contado = precio - descuento;
+  var cuotas = precio / 3;
+
+  // mostrar los valores
+  alert("Contado R$: " + contado.toFixed(2) + "\nO en 3 cuotas R$: " + cuotas.toFixed(2));
+</script>
