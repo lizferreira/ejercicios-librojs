@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4.4</title>
+</head>
+<body>
+    <script>
+        alert("Ingrese 0 para salir");
+        // inicio del bucle
+        do{
+            var num = Number(prompt("Numero: "));
+
+            if (num == 0 || isNaN(num)){
+                var salir = confirm("Confirmar salida?");//solicita informacion del usuario
+                if (salir){
+                    break;//sale del bucle
+                }
+                else{
+                    continue;//vuelve al inicio del bucle
+                }
+            }
+            //si es par, muestra el doble; impar, muestra el triple
+            if (num % 2 == 0){
+                alert("El doble de " + num + " es: " + num * 2);
+            }
+            else{
+                alert("El triple de " + num + " es: " + num * 3);
+            }
+
+        } while(true);//mientras sea verdadero (solo sale del bucle, por el break)
+        alert("Bye, bye...");
+    </script>
+</body>
+</html>
